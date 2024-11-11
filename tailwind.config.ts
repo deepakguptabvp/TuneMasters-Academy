@@ -1,6 +1,4 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
-
-// grid-dotted styling & also for all color patterns
 const svgToDataUri = require("mini-svg-data-uri");
 const colors = require("tailwindcss/colors");
 const {
@@ -14,14 +12,17 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{ts,tsx}", // Added for extended content paths
   ],
   darkMode: "class",
   theme: {
     extend: {
+      // Existing animations and keyframes
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        // "meteor-effect": "meteor 5s linear infinite", // New animation added
       },
       keyframes: {
         spotlight: {
@@ -39,6 +40,14 @@ const config: Config = {
             transform: "translate(calc(-50% - 0.5rem))",
           },
         },
+        // meteor: {
+        //   "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+        //   "70%": { opacity: "1" },
+        //   "100%": {
+        //     transform: "rotate(215deg) translateX(-500px)",
+        //     opacity: "0",
+        //   },
+        // }, // New keyframes added
       },
       colors: {
         background: "var(--background)",
@@ -48,7 +57,6 @@ const config: Config = {
   },
   plugins: [
     addVariablesForColors,
-    // grid-dotted styling plugin and also for color pattern
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
@@ -73,9 +81,10 @@ const config: Config = {
     },
   ],
 };
+
 export default config;
 
-// plugin for moving-border -----> Home Page
+// Plugin for adding CSS variables for colors
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(

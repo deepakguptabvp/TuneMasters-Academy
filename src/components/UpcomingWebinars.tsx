@@ -2,6 +2,7 @@
 import React from "react";
 import { HoverEffect } from "./ui/card-hover-effect";
 import Link from "next/link";
+import { Spotlight } from "./ui/Spotlight";
 
 const UpcomingWebinars = () => {
   const featuredWebinars = [
@@ -51,19 +52,21 @@ const UpcomingWebinars = () => {
   ];
 
   return (
-    <div className="p-12 bg-gray-900">
+    <div className="p-2 bg-gray-900 w-full rounded-md flex md:items-center md:justify-center antialiased relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <Spotlight />
         <div id="1" className="text-center">
-          <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
+          <h2 className="mt-10 text-base text-teal-600 font-semibold tracking-wide uppercase">
             Featured Webinars
           </h2>
-          <p className="mt-4 mx-3 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+          <p className="mt-8 text-xl leading-8 font-extrabold tracking-tight text-white md:text-4xl">
             <u> Enhance Your Musical Journey</u>
           </p>
         </div>
 
-        <div id="2" className="text-center mt-10">
-          <HoverEffect className=""
+        <div id="2" className="text-center">
+          <HoverEffect
+            className=""
             items={featuredWebinars.map((webinar) => ({
               title: webinar.title,
               description: webinar.description,
@@ -72,11 +75,11 @@ const UpcomingWebinars = () => {
           />
         </div>
 
-        <div id="3" className="text-center mt-10">
+        <div id="3" className="text-center my-8 ">
           <Link
             href={"/"}
             className="px-4 py-2 rounded-lg border border-neutral-600 text-neutral-700
-        bg-white  hover:bg-gray-100 transition duration-200"
+        bg-white hover:bg-gray-300 transition duration-200"
           >
             View All Webinars
           </Link>

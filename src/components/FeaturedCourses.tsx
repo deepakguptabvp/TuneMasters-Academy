@@ -26,7 +26,7 @@ const FeaturedCourses = () => {
           <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
             Featured Courses
           </h2>
-          <p className="mt-4 mx-3 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+          <p className="mt-4 mx-3 text-2xl leading-8 font-extrabold tracking-tight text-white md:text-4xl">
            <u> Learn with the best</u>
           </p>
         </div>
@@ -57,7 +57,7 @@ const FeaturedCourses = () => {
         <Link
           href={"/courses"}
           className="px-4 py-2 rounded-lg border border-neutral-600 text-neutral-700
-        bg-white  hover:bg-gray-100 transition duration-200"
+        bg-white  hover:bg-gray-300 transition duration-200"
         >
           View All Courses
         </Link>
