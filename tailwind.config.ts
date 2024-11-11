@@ -1,4 +1,6 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+
+// grid-dotted styling & also for all color patterns
 const svgToDataUri = require("mini-svg-data-uri");
 const colors = require("tailwindcss/colors");
 const {
@@ -46,6 +48,7 @@ const config: Config = {
   },
   plugins: [
     addVariablesForColors,
+    // grid-dotted styling plugin and also for color pattern
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {

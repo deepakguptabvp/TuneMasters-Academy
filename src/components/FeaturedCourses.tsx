@@ -27,7 +27,7 @@ const FeaturedCourses = () => {
             Featured Courses
           </h2>
           <p className="mt-4 mx-3 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-            Learn with the best
+           <u> Learn with the best</u>
           </p>
         </div>
       </div>
