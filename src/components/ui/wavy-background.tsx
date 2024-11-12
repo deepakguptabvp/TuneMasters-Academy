@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable-line @typescript-eslint/no-explicit-any */
 import { cn } from "@/utils/cn";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
@@ -15,7 +16,7 @@ export const WavyBackground = ({
   waveOpacity = 0.5,
   ...props
 }: {
-  children?: any;
+  children?: any; // eslint-disable-line @typescript-eslint/no-explicit-any
   className?: string;
   containerClassName?: string;
   colors?: string[];
