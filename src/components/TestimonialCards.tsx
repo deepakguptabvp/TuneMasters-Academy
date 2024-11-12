@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
-import { div } from "framer-motion/client";
 
 const testimonials = [
   {
