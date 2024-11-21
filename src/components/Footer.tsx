@@ -59,13 +59,13 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex flex-col">
-            <a href="https://flowbite.com/" className="flex items-center">
+            <a href="/" className="flex items-center">
               {/* <img
                 src="https://flowbite.com/docs/images/logo.svg"
                 className="h-8 mr-2"
                 alt="FlowBite Logo"
               /> */}
-              <h2 className="self-center  text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <h2 className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 TuneMasters Academy
               </h2>
             </a>
@@ -86,18 +86,18 @@ const Footer = () => {
                     Home
                   </a>
                 </li>
-                <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                {/* <li className="mb-4">
+                  <a href="/contact" className="hover:underline">
                     About
                   </a>
-                </li>
+                </li> */}
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <a href="/courses" className="hover:underline">
                     Courses
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="hover:underline">
+                  <a href="/contact" className="hover:underline">
                     Contact
                   </a>
                 </li>
