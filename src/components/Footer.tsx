@@ -2,59 +2,6 @@ import React from "react";
 
 const Footer = () => {
   return (
-    // <footer className="bg-black flex flex-col">
-    //   <div className="flex p-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-    //     <div className="flex flex-col">
-    //       <h2 className="text-white text-lg font-semibold mt-4">About Us</h2>
-    //       <p className="text-sm">
-    //         Music School is a premier institution dedicated to teaching the art
-    //         and science of music. We nurture talent from the ground up,
-    //         fostering a vibrant community of musicians.
-    //       </p>
-    //     </div>
-    //     <div>
-    //       <h2 className="text-white text-lg font-semibold mt-4">
-    //         Quick Links
-    //       </h2>
-    //       <ul className="text-sm">
-    //         <li>
-    //           <a href="">Home</a>
-    //         </li>
-    //         <li>
-    //           <a href="">About Us</a>
-    //         </li>
-    //         <li>
-    //           <a href="">Courses</a>
-    //         </li>
-    //         <li>
-    //           <a href="">Contact</a>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //     <div>
-    //       <h2 className="text-white text-lg font-semibold mt-4">
-    //         Follow Us
-    //       </h2>
-    //       <ul className="text-sm">
-    //         <li className="hover:underline">
-    //           <a href="">Facebook</a>
-    //         </li>
-    //         <li>
-    //           <a href="">Twitter</a>
-    //         </li>
-    //         <li>
-    //           <a href="">Instagram</a>
-    //         </li>
-    //         <li>
-    //           <a href="">Contact</a>
-    //         </li>
-    //       </ul>
-    //     </div>
-    //     <div></div>
-    //   </div>
-    //   <p className="text-center text-xs p-8">© 2024 Music School. All rights reserved.</p>
-    // </footer>
-
     <footer className="bg-white dark:bg-black">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
