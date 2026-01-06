@@ -25,7 +25,7 @@ const instructors = [
     name: "Nishant Rastogi",
     designation: "Drumming Expert",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbRK4LKT2qTdwlfx8j4SIw_peGEgx6ertegw&s",
+      "https://images.newscientist.com/wp-content/uploads/2014/03/dn25142-1_800.jpg",
   },
   {
     id: 5,

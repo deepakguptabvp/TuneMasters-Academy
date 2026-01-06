@@ -20,6 +20,11 @@ const nextConfig = {
         hostname: "img.wynk.in",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "images.newscientist.com",
+        pathname: "**",
+      },
     ],
   },
   eslint: {
